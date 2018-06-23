@@ -1,6 +1,9 @@
 require "./wasmc/*"
+require "compiler/crystal/syntax"
 
-# TODO: Write documentation for `Wasmc`
-module Wasmc
-  # TODO: Put your code here
+# WebAssembly Compiler
+module WasmC
+    class Compiler
+        
+    end
 end
