@@ -15,7 +15,7 @@ module WasmC
             @bits == 64
         end
 
-        def as_bits(x : Int)
+        def as_arch(x : Int)
             if x64?
                 x.to_u64
             else 
@@ -24,6 +24,9 @@ module WasmC
         end
         def null_ptr : Int32 | Int64
             x64? ? 0_u64 : 0_u32
+        end
+        def int_size
+            x64? ? 8 : 4
         end
     end
 end
